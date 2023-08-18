@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <title>K/Ilham Portfolio Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Portfolio Website</title>
+    <link rel="stylesheet" href="stlye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19d4e7ed6a.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://www.facebook.com/PrateepsassanaIslamicSchool">
+                    <img src="img/PS_w.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Student / Gadget Lover</p>
+                <h1>Hi, I'm Ilham Khamsee<span>khiew</span><br> From Suratthani</h1>
+            </div>
+        </div>
+<!-------------------------------------------------about---------------------------------------------------->        
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/CAM.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-m">เกิดในมาเลเซียและโตในสุราษฏร์ธานี เป็นคนสุราษฏร์ธานีไม่แท้ที่นับถือศาสนาอิสลาม จับพลัดจับผลูมาเรียนศาสนาที่โรงเรียนประทีปศาสน์</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>      
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span> Programming </span><br>C/C++, Python, HTML, Java</li>
+                            <li><span> Graphic </span><br>Photoshop, Premire pro, Canva</li>
+                            <li><span> Gaming </span><br>Valorant, Overwatch, Apex</li>
+                            <li><span> Other</span><br>Adzan, Photography, Cooking, Travel</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span> 2019 </span><br>ตอบปัญหาทางวิทยาศาสตร์ ระดับมัธยมต้น เข้าร่วม</li>
+                            <li><span> 2020 </span><br>ตอบปัญหาอุตสาหกรรม ระดับมัธยมต้น เหรียญทอง</li>
+                            <li><span> 2023 </span><br>drone coding ชมเชย<br>ประกวดสิ่งประดิษฐ์ทางวิทยาศาสตร์ เข้าร่วม<br>สำรองสอวน.คอมพิวเตอร์ ค่าย 1 <br>ได้รับคัดเลือกเป็นตัวแทนโรงเรียนเข้าร่วมแข่ง Bangmod Hackathon 2023</li>
+                            <li><span> 2024 </span><br>ค่าย It's all about Computer Engineer มอ.หาดใหญ่<br>ค่าย English camp in Penang 
+                                <br>รัฐมนตรีว่าการกระทรวงเทคโนโลยีสารสนเทศ สภานักเรียนโรงเรียนประทีปศาสน์</li>
+                        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> เตรียมอนุบาล - อนุบาล - ประถมศึกษา </span><br>โรงเรียนอนุบาลหนูน้อย</li>
+                            <li><span> มัธยมศึกษาตอนต้น </span><br>โรงเรียประทีปศาสน์</li>
+                            <li><span> มัธยมศึกษาตอนปลาย </span><br>โรงเรียนประทีปศาสน์ สายวิทย์ - คณิต</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Photoes"></div>
+
+
+
+
+
+    <!-----------------------------------contact------------------------------------->
+    <div id="contact">
+        <div class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">CONTACT ME</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>14519@psptc.ac.th</p>
+                        <p><i class="fa-solid fa-phone"></i>0929309223</p>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100014383938679"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/khamseekhiew/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/OnisawanO"><i class="fa-brands fa-github"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+<!---------------------------------------------->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents ){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<!-------------------------------------------------about---------------------------------------------------->
+ </body>
+ </html>
