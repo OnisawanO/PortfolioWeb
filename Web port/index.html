@@ -19,15 +19,15 @@
                 <a href="https://www.facebook.com/PrateepsassanaIslamicSchool">
                     <img src="img/PS_w.png" class="logo">
                 </a>
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="sidemenu">
+                    <li onclick="closemenu()"><a href="#header">Home</a></li>
+                    <li onclick="closemenu()"><a href="#about">About</a></li>
+                    <li onclick="closemenu()"><a href="#contact" >Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="header-text">
+            <div class="header-text"> 
                 <p>Student / Gadget Lover</p>
                 <h1>Hi, I'm Ilham Khamsee<span>khiew</span><br> From Suratthani</h1>
             </div>
@@ -132,6 +132,7 @@
 <!---------------------------------------------->
 <script>
 
+    var sidemenu = document.getElementById("sidemenu")
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     
@@ -146,7 +147,15 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
 </script>
+
+
 <!-------------------------------------------------about---------------------------------------------------->
  </body>
  </html>
